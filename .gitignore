@@ -102,3 +102,11 @@ dist
 
 # TernJS port file
 .tern-port
+
+##################################################
+
+# Prettier config file
+#.prettierrc*
+
+# Homework support folder
+.req
