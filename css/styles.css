@@ -55,6 +55,8 @@
   --outline-offset: calc(var(--outline-width) * -1);
   --outline-style: solid;
 
+  --container-width: 1200px;
+
   /* grid */
   --grid-items-gap: 30px;
   --grid-items-per-row: 3;
@@ -84,13 +86,14 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 img {
-  /* убирает зазор 4px */
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
-  width: 1200px;
-  padding: 0 15px;
+  width: var(--container-width);
+  padding: 94px 15px;
   margin: 0 auto;
 
   outline: var(--outline-color) var(--outline-style) var(--outline-width);
@@ -232,11 +235,13 @@ img {
   border-bottom: 1px solid var(--grey-color-sec);
 }
 
-.header-container,
+.header .container,
 .header-nav .list,
 .header-list {
   display: flex;
   align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .header-nav {
@@ -259,13 +264,12 @@ img {
 
 .hero .title {
   margin-bottom: 30px;
-
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
   letter-spacing: 0.06em;
-  text-transform: uppercase;
   color: var(--hero-title-color);
+  text-transform: uppercase;
   text-align: center;
 }
 
@@ -293,13 +297,11 @@ img {
 }
 
 .advantages .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 0;
 }
 
 .advantages .subtitle {
   margin-bottom: 10px;
-
   line-height: calc(16 / var(--font-size-px-num));
   text-transform: uppercase;
 }
@@ -308,18 +310,8 @@ img {
   line-height: calc(24 / var(--font-size-px-num));
 }
 
-.services .container {
-  padding-bottom: 94px;
-}
-
 .services .section-title {
   margin-bottom: 50px;
-}
-
-.team .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  --grid-items-per-row: 4;
 }
 
 .team .section-title {
@@ -342,6 +334,7 @@ img {
 }
 
 .team {
+  --grid-items-per-row: 4;
   background: var(--background-sec-color);
 }
 
@@ -379,11 +372,6 @@ img {
 /* .footer .list-item:not(:last-child) {
   margin-bottom: 9px;
 } */
-
-.works .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 .filter-list {
   display: flex;
