@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio - студія розробки IT продуктів</title>
 
-    <!-- Google Fonts -->
+    <!-- Fonts -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,20 +28,22 @@
   </head>
 
   <body>
-    <header class="header">
-      <div class="container header-container">
+    <header class="header section">
+      <div class="container">
         <!-- prettier-ignore -->
         <a class="logo" href="./index.html" lang="en">
           Web<span class="logo-suffix">Studio</span>
         </a>
-        <nav class="header-nav">
-          <ul class="list">
+
+        <nav class="nav">
+          <ul class="nav-links">
             <li><a class="link current" href="./index.html">Студія</a></li>
             <li><a class="link" href="./portfolio.html">Портфоліо</a></li>
             <li><a class="link" href="#contacts">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="list header-list">
+
+        <ul class="group">
           <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
           <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
@@ -51,7 +53,7 @@
     <main>
       <!-- Hero -->
 
-      <section class="hero">
+      <section class="hero section">
         <div class="container">
           <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
           <button class="btn primary" type="button">Замовити послугу</button>
@@ -60,23 +62,23 @@
 
       <!-- Advantages-->
 
-      <section class="advantages">
+      <section class="advantages section">
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
-          <ul class="list">
-            <li>
+          <ul class="grid">
+            <li class="grid-item">
               <h3 class="subtitle">Увага до деталей</h3>
               <p class="text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
             </li>
-            <li>
+            <li class="grid-item">
               <h3 class="subtitle">Пунктуальність</h3>
               <p class="text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
             </li>
-            <li>
+            <li class="grid-item">
               <h3 class="subtitle">Планування</h3>
               <p class="text">Так само консультація з широким активом значною мірою зумовлює.</p>
             </li>
-            <li>
+            <li class="grid-item">
               <h3 class="subtitle">Сучасні технології</h3>
               <p class="text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
             </li>
@@ -86,23 +88,28 @@
 
       <!-- Services -->
 
-      <section class="services">
+      <section class="services section">
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="list grid">
             <li class="grid-item">
               <img
-                src="./images/services-01.jpg"
+                src="./images/services/services-01.jpg"
                 alt="Розробка цифрових продуктів та сервісів"
                 width="370"
                 height="294"
               />
             </li>
             <li class="grid-item">
-              <img src="./images/services-02.jpg" alt="Розробка мобільних застосунків" width="370" height="294" />
+              <img
+                src="./images/services/services-02.jpg"
+                alt="Розробка мобільних застосунків"
+                width="370"
+                height="294"
+              />
             </li>
             <li class="grid-item">
-              <img src="./images/services-03.jpg" alt="UX/UI дизайн продуктів" width="370" height="294" />
+              <img src="./images/services/services-03.jpg" alt="UX/UI дизайн продуктів" width="370" height="294" />
             </li>
           </ul>
         </div>
@@ -110,33 +117,33 @@
 
       <!-- Team -->
 
-      <section class="team">
+      <section class="team section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="list grid">
             <li class="grid-item">
-              <img src="./images/team-ihor-demyanenko.jpg" alt="Фото Ігоря" width="270" height="260" />
+              <img src="./images/team/team-ihor-demyanenko.jpg" alt="Фото Ігоря" width="270" height="260" />
               <div class="desc">
                 <h3 class="subtitle">Ігор Дем'яненко</h3>
                 <p class="text" lang="en">Product Designer</p>
               </div>
             </li>
             <li class="grid-item">
-              <img src="./images/team-olga-repina.jpg" alt="Фото Ольги" width="270" height="260" />
+              <img src="./images/team/team-olga-repina.jpg" alt="Фото Ольги" width="270" height="260" />
               <div class="desc">
                 <h3 class="subtitle">Ольга Рєпіна</h3>
                 <p class="text" lang="en">Frontend Developer</p>
               </div>
             </li>
             <li class="grid-item">
-              <img src="./images/team-mikola-tarasov.jpg" alt="Фото Миколи" width="270" height="260" />
+              <img src="./images/team/team-mikola-tarasov.jpg" alt="Фото Миколи" width="270" height="260" />
               <div class="desc">
                 <h3 class="subtitle">Микола Тарасов</h3>
                 <p class="text" lang="en">Marketing</p>
               </div>
             </li>
             <li class="grid-item">
-              <img src="./images/team-mykhailo-ermakov.jpg" alt="Фото Михайла" width="270" height="260" />
+              <img src="./images/team/team-mykhailo-ermakov.jpg" alt="Фото Михайла" width="270" height="260" />
               <div class="desc">
                 <h3 class="subtitle">Михайло Єрмаков</h3>
                 <p class="text" lang="en">UI Designer</p>
@@ -149,7 +156,7 @@
 
     <!-- Footer -->
 
-    <footer class="footer">
+    <footer class="footer section">
       <div class="container">
         <h2 class="visually-hidden">Контакти</h2>
         <!-- prettier-ignore -->
@@ -157,8 +164,8 @@
             Web<span class="logo-suffix">Studio</span>
         </a>
         <address id="contacts">
-          <ul class="list">
-            <li class="list-item">
+          <ul>
+            <li>
               <a
                 class="link addr"
                 href="https://goo.gl/maps/AkviUJwiQwRb5J1W6"
@@ -168,8 +175,8 @@
                 м. Київ, пр-т Лесі Українки, 26
               </a>
             </li>
-            <li class="list-item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li class="list-item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
           </ul>
         </address>
       </div>

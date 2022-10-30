@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфоліо WebStudio</title>
 
-    <!-- Google Fonts -->
+    <!-- Fonts -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,20 +28,22 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header section">
       <div class="container">
         <!-- prettier-ignore -->
         <a class="logo" href="./index.html" lang="en">
           Web<span class="logo-suffix">Studio</span>
         </a>
-        <nav class="header-nav">
-          <ul class="list">
+
+        <nav class="nav">
+          <ul class="nav-links">
             <li><a class="link" href="./index.html">Студія</a></li>
             <li><a class="link current" href="./portfolio.html">Портфоліо</a></li>
             <li><a class="link" href="#contacts">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="list header-list">
+
+        <ul class="group">
           <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
           <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
@@ -49,15 +51,13 @@
     </header>
 
     <main>
-      <!-- Works -->
-
-      <section class="works">
+      <section class="works section">
         <div class="container">
           <h1 class="visually-hidden">Реалізовані проекти</h1>
 
           <!-- Filters -->
 
-          <ul class="list filter-list">
+          <ul class="filter-list">
             <li><button class="btn secondary" type="button">Усі</button></li>
             <li><button class="btn secondary" type="button">Веб-сайти</button></li>
             <li><button class="btn secondary" type="button">Додатки</button></li>
@@ -67,7 +67,7 @@
 
           <!-- Projects -->
 
-          <ul class="list grid">
+          <ul class="grid">
             <li class="grid-item">
               <a class="link" href="">
                 <img
@@ -181,7 +181,7 @@
 
     <!-- Footer -->
 
-    <footer class="footer">
+    <footer class="footer section">
       <div class="container">
         <h2 class="visually-hidden">Контакти</h2>
         <!-- prettier-ignore -->
@@ -189,8 +189,8 @@
             Web<span class="logo-suffix">Studio</span>
         </a>
         <address id="contacts">
-          <ul class="list">
-            <li class="list-item">
+          <ul>
+            <li>
               <a
                 class="link addr"
                 href="https://goo.gl/maps/AkviUJwiQwRb5J1W6"
@@ -200,8 +200,8 @@
                 м. Київ, пр-т Лесі Українки, 26
               </a>
             </li>
-            <li class="list-item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li class="list-item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
           </ul>
         </address>
       </div>
