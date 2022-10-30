@@ -123,9 +123,6 @@ body {
 }
 
 .logo {
-  display: inline-block;
-  margin-right: 93px;
-
   font-family: Raleway;
   font-size: 26px;
   line-height: calc(31 / 26);
@@ -184,6 +181,10 @@ body {
 
 .logo-suffix {
   color: var(--logo-suffix-dark);
+}
+
+.header .logo {
+  margin-right: 93px;
 }
 
 .header .nav-links {
@@ -379,6 +380,7 @@ body {
 }
 
 .footer .logo {
+  display: inline-block;
   margin-bottom: 20px;
 }
 
